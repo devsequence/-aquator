@@ -1,0 +1,71 @@
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: px(24) 0;
+  .container{
+    display: flex;
+    align-items: center;
+  }
+  &-logo{
+    width: px(192);
+    height: px(48);
+    margin-right: px(10);
+    a{
+      display: inline-block;
+      width: 100%;
+    }
+    img{
+      width: 100%;
+    }
+  }
+  &-nav{
+    ul{
+      display: flex;
+      align-items: center;
+    }
+    li{
+      margin-right: px(20);
+    }
+    a{
+      font-weight: 600;
+      font-size: px(24);
+      line-height: 90%;
+      display: flex;
+      align-items: center;
+      letter-spacing: -0.01em;
+      color: $white;
+      border-radius: px(8);
+      padding: px(16);
+      &.active, &:hover{
+        background: rgba(255, 255, 255, 0.15);
+      }
+    }
+  }
+  &-lang{
+    margin-right: px(24);
+  }
+  &-phone{
+    margin-right: px(37);
+  }
+  &-lang, &-phone{
+    a{
+      font-size: px(24);
+      line-height: 90%;
+      display: flex;
+      align-items: center;
+      letter-spacing: -0.01em;
+      color: $white;
+    }
+  }
+  &-cart{
+    .icon{
+      width: px(32);
+      height: px(32);
+      fill: none;
+      stroke-width: 2px;
+      stroke: $white;
+    }
+  }
+}
